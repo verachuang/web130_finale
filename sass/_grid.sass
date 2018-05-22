@@ -1,0 +1,9 @@
+@mixin size($size) 
+    @if $size == small 
+        @media screen and (max-width: 361px) 
+            @content
+        
+    
+    @else if $size == medium 
+        @media screen and (min-width: 798px) and (max-width: 1440px)  
+            @content
